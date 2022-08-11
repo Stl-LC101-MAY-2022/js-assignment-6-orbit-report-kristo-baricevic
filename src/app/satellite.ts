@@ -1,3 +1,5 @@
+import { truncate } from "fs";
+
 export class Satellite {
 
 	name: string;
@@ -14,8 +16,12 @@ export class Satellite {
 		this.operational = operational;
    }
 	
-	isSpaceDebris(): boolean {
-		return true;
+	isSpaceDebris(satellite): boolean {
+		if (satellite.type === "Space Debris"){
+			return true;
+		} else {
+			return false;
+		};
    }
 
 }
