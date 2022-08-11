@@ -21,7 +21,7 @@ export class Satellite {
 			return true;
 		} else {
 			return false;
-		}
+		};
    }
 }
 // TODO 3a: fix isSpaceDebris check
